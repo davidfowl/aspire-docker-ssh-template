@@ -2,6 +2,11 @@
 
 A starter template for deploying [Aspire](https://aspire.dev) applications with Docker over SSH.
 
+## Prerequisites
+
+- [Aspire CLI](https://aspire.dev/get-started/install-cli/)
+- Docker
+
 ## Quick Start
 
 1. Use this template
