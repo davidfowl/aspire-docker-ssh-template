@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://aspire_docker_ssh_template.dev.localhost:17236;http://aspire_docker_ssh_template.dev.localhost:15296",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DOTNET_ENVIRONMENT": "Development",
+        "ASPIRE_DASHBOARD_OTLP_ENDPOINT_URL": "https://localhost:21218",
+        "ASPIRE_DASHBOARD_MCP_ENDPOINT_URL": "https://localhost:23075",
+        "ASPIRE_RESOURCE_SERVICE_ENDPOINT_URL": "https://localhost:22104"
+      }
+    },
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "http://aspire_docker_ssh_template.dev.localhost:15296",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DOTNET_ENVIRONMENT": "Development",
+        "ASPIRE_DASHBOARD_OTLP_ENDPOINT_URL": "http://localhost:19166",
+        "ASPIRE_DASHBOARD_MCP_ENDPOINT_URL": "http://localhost:18291",
+        "ASPIRE_RESOURCE_SERVICE_ENDPOINT_URL": "http://localhost:20181"
+      }
+    }
+  }
+}

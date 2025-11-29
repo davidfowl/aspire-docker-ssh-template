@@ -1,0 +1,187 @@
+---
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Powered by Aspire</title>
+		<style>
+			:root {
+				--aspire-purple: #512BD4;
+				--aspire-purple-light: #7455DD;
+				--aspire-purple-lighter: #9780E5;
+				--aspire-bg-dark: #1a1a2e;
+				--aspire-bg-darker: #0f0f1a;
+				--aspire-text: #ffffff;
+				--aspire-text-muted: #a0a0b0;
+				--aspire-border: rgba(81, 43, 212, 0.3);
+			}
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+				min-height: 100vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: var(--aspire-bg-darker);
+				background-image:
+					radial-gradient(ellipse at top, rgba(81, 43, 212, 0.2) 0%, transparent 50%),
+					radial-gradient(ellipse at bottom right, rgba(81, 43, 212, 0.15) 0%, transparent 40%);
+				color: var(--aspire-text);
+				padding: 2rem;
+			}
+			main {
+				text-align: center;
+				max-width: 650px;
+			}
+			.logo {
+				margin-bottom: 1.5rem;
+			}
+			.logo svg {
+				width: 80px;
+				height: 80px;
+			}
+			h1 {
+				font-size: 2.75rem;
+				font-weight: 700;
+				margin-bottom: 0.5rem;
+				background: linear-gradient(135deg, var(--aspire-text) 0%, var(--aspire-purple-light) 100%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+			}
+			.subtitle {
+				font-size: 1.1rem;
+				color: var(--aspire-purple-light);
+				margin-bottom: 1.5rem;
+				font-weight: 500;
+			}
+			p {
+				font-size: 1.15rem;
+				color: var(--aspire-text-muted);
+				margin-bottom: 1.25rem;
+				line-height: 1.7;
+			}
+			.tagline {
+				font-size: 1rem;
+				color: var(--aspire-text-muted);
+				margin-bottom: 2rem;
+				padding: 1rem 1.5rem;
+				background: rgba(81, 43, 212, 0.1);
+				border: 1px solid var(--aspire-border);
+				border-radius: 0.5rem;
+			}
+			.links {
+				display: flex;
+				gap: 1rem;
+				justify-content: center;
+				flex-wrap: wrap;
+				margin-bottom: 2rem;
+			}
+			a {
+				color: var(--aspire-text);
+				background: var(--aspire-purple);
+				padding: 0.75rem 1.75rem;
+				border-radius: 0.5rem;
+				text-decoration: none;
+				font-weight: 600;
+				font-size: 0.95rem;
+				transition: all 0.2s ease;
+				border: 1px solid transparent;
+			}
+			a:hover {
+				background: var(--aspire-purple-light);
+				transform: translateY(-2px);
+				box-shadow: 0 4px 20px rgba(81, 43, 212, 0.4);
+			}
+			a.secondary {
+				background: transparent;
+				border: 1px solid var(--aspire-border);
+				color: var(--aspire-text-muted);
+			}
+			a.secondary:hover {
+				background: rgba(81, 43, 212, 0.15);
+				border-color: var(--aspire-purple);
+				color: var(--aspire-text);
+				box-shadow: none;
+			}
+			.status {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.75rem;
+				background: var(--aspire-bg-dark);
+				padding: 0.75rem 1.5rem;
+				border-radius: 2rem;
+				font-size: 0.9rem;
+				color: var(--aspire-text-muted);
+				border: 1px solid var(--aspire-border);
+			}
+			.status-dot {
+				width: 8px;
+				height: 8px;
+				background: #22c55e;
+				border-radius: 50%;
+				animation: pulse 2s infinite;
+			}
+			@keyframes pulse {
+				0%, 100% { opacity: 1; }
+				50% { opacity: 0.5; }
+			}
+			.tech-stack {
+				display: flex;
+				gap: 0.5rem;
+				justify-content: center;
+				margin-top: 2rem;
+				flex-wrap: wrap;
+			}
+			.tech-badge {
+				background: rgba(255, 255, 255, 0.05);
+				padding: 0.4rem 0.8rem;
+				border-radius: 0.25rem;
+				font-size: 0.8rem;
+				color: var(--aspire-text-muted);
+				border: 1px solid rgba(255, 255, 255, 0.1);
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<div class="logo">
+				<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M28 240C12.56 240 0 227.44 0 212C0 206.968 1.328 202.072 3.84 197.832L70.544 82.296L70.816 81.888L103.744 24.792C108.744 16.152 118.032 10.792 128 10.792C137.968 10.792 147.256 16.152 152.248 24.784L252.248 197.992C254.664 202.064 255.992 206.96 255.992 211.992C255.992 227.432 243.432 239.992 227.992 239.992L28 240Z" fill="#512BD4"/>
+					<path d="M202.64 144H135.92L128 130.24L105.04 90.48C104 88.72 102.56 87.2 100.64 86.16C94.96 82.8 87.6 84.8 84.24 90.56L117.6 32.8C119.68 29.2 123.52 26.8 128 26.8C132.48 26.8 136.32 29.2 138.4 32.8L171.6 90.32L171.68 90.48L171.84 90.72L202.64 144Z" fill="#7455DD"/>
+					<path d="M240 212C240 218.64 234.64 224 228 224H161.36C168 224 173.36 218.64 173.36 212C173.36 209.84 172.72 207.76 171.76 206L138.4 148.24L135.92 144H202.64L238.4 206C239.44 207.76 240 209.84 240 212Z" fill="#9780E5"/>
+					<path d="M173.36 212C173.36 218.64 168 224 161.36 224H94.6399C101.28 224 106.64 218.64 106.64 212C106.64 209.84 106.08 207.76 105.04 206C105.04 205.92 104.96 205.84 104.88 205.76L94.3199 188.56L70.5599 149.76C68.3999 146.24 64.5599 144 60.3199 144H135.92L138.4 148.24L139.416 150L171.76 206C172.72 207.76 173.36 209.84 173.36 212Z" fill="#B9AAEE"/>
+					<path d="M106.64 212C106.64 218.64 101.28 224 94.64 224H28C21.36 224 16 218.64 16 212C16 209.84 16.56 207.76 17.6 206L49.92 150C52.08 146.32 56.08 144 60.32 144C64.56 144 68.4 146.24 70.56 149.76L94.32 188.56L104.88 205.76C104.96 205.84 105.04 205.92 105.04 206C106.08 207.76 106.64 209.84 106.64 212Z" fill="#DCD5F6"/>
+					<path d="M135.92 144H60.32C56.08 144 52.08 146.32 49.92 150L53.36 144L83.92 91.12L84.24 90.64V90.56C87.6 84.8 94.96 82.8 100.64 86.16C102.56 87.2 104 88.72 105.04 90.48L128 130.24L135.92 144Z" fill="#9780E5"/>
+				</svg>
+			</div>
+			<h1>Aspire</h1>
+			<p class="subtitle">Aspire is the tool for code-first, extensible, observable dev and deploy.</p>
+			<div class="tagline">
+				Deploy anywhere — Docker, Kubernetes, Azure, AWS, or your own infrastructure.
+			</div>
+			<div class="links">
+				<a href="https://learn.microsoft.com/dotnet/aspire">Documentation</a>
+				<a href="https://github.com/dotnet/aspire" class="secondary">GitHub</a>
+			</div>
+			<div class="status">
+				<span class="status-dot"></span>
+				Running on Aspire
+			</div>
+			<div class="tech-stack">
+				<span class="tech-badge">Aspire</span>
+				<span class="tech-badge">Docker</span>
+				<span class="tech-badge">SSH</span>
+				<span class="tech-badge">Astro</span>
+			</div>
+		</main>
+	</body>
+</html>
