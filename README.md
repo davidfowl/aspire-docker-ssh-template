@@ -67,6 +67,8 @@ When enabled, the template uses [Certbot](https://certbot.eff.org/) to automatic
 
 Certbot runs as a container, obtains the certificate, then YARP starts with HTTPS configured. Certificates are stored in a shared Docker volume and auto-renewed.
 
+> **Note:** If you toggle `EnableHttps`, re-run `aspire do gh-action-dcenv` to regenerate the workflow with the updated configuration.
+
 ## Learn More
 
 - [aspire.dev](https://aspire.dev)
